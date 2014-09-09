@@ -22,14 +22,13 @@ Or install it yourself as:
 
 Include the files inside your manifest (usually application.css):
 
-  //= require opoloo_assets
+ 	//= require opoloo_assets
 
 ### Grid
 
 *Example:*
 
-```
-
+```html
 <div class="container">
   <div class="row">
 
