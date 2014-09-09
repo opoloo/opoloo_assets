@@ -1,0 +1,40 @@
+@mixin noTransition() {
+  -moz-transition: none;
+  -webkit-transition: none;
+  -o-transition: color 0 ease-in;
+  transition: none;
+} 
+
+/* phones */
+@media only screen and (max-width: 767px) {
+  .row {
+    .col {
+      width: 100%;
+      margin-left: 0px;
+      float: left;
+    }
+    .col + .col:last-child {
+      float: left;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  * {     
+    font-size: 14px;
+  }
+}
+
+/* portrait phones */
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  .row {
+    .col {
+      width: 100%;
+      margin-left: 0px;
+      float: left;
+    }
+    .col + .col:last-child {
+      float: left;
+    }
+  }
+}

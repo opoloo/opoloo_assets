@@ -1,0 +1,71 @@
+/* Opoloo Standard Style Sheet */
+/*******************************/
+
+@import "opoloo_reset.css.scss";
+@import "opoloo_grid.css.scss";
+
+
+* {
+  padding:0px;
+  margin:0px;
+}
+
+
+.clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+    // Fixes Opera/contenteditable bug:
+    // http://nicolasgallagher.com/micro-clearfix-hack/#comment-36952
+    line-height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li, ol li {
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin:0px;
+}
+
+#loading-indicator {
+  text-align: center;
+  z-index: 100;
+  position: fixed;
+  left: 45%;
+  top: 50%;
+  width: 200px;
+  padding: 10px;
+  background: #000;
+  opacity: 0.8;
+  color: #FFF;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+}
+
+#form_errors {
+  text-align: center;
+  z-index: 100;
+  position: fixed;
+  left: 45%;
+  top: 50%;
+  width: 600px;
+  padding: 10px;
+  background: #000;
+  opacity: 0.8;
+  color: #FFF;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+}
